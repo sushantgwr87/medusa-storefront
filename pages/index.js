@@ -15,7 +15,7 @@ export default function Home({ products }) {
                         <p>
                             This is Demo store made using <span>Medusa</span>{" "}
                             and <span>Next.js</span> for <span>Hackathon</span>{" "}
-                            by Medusa itself.
+                            organised by Medusa itself.
                         </p>
                     </div>
                     <div className={styles.intro_image}>
