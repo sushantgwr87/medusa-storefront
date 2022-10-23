@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '../../styles/footer.module.css';
-import SiteLogo from '../../public/storefront_logo.png'
-import portfolioImage from '../../public/logofilled.png'
+import styles from '../../../styles/footer.module.css';
+import SiteLogo from '../../../public/storefront_logo.png'
+import portfolioImage from '../../../public/logofilled.png'
 import { BsGithub } from 'react-icons/bs'
 import { FaLinkedinIn, FaDiscord } from 'react-icons/fa'
 

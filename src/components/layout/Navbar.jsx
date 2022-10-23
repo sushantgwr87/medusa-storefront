@@ -4,9 +4,9 @@ import { useRouter } from "next/router";
 import React, { useContext, useEffect, useState, useRef } from "react";
 import DisplayContext from "../../context/display-context";
 import StoreContext from "../../context/store-context";
-import styles from "../../styles/navbar.module.css";
+import styles from "../../../styles/navbar.module.css";
 import { quantity, sum } from "../../utils/helper-functions";
-import SiteLogo from '../../public/storefront_logo.png'
+import SiteLogo from '../../../public/storefront_logo.png'
 import useBreakpoints from "../../customHooks/useBreakpoints";
 
 export const NavBar = () => {

@@ -2,8 +2,8 @@ import Image from "next/image";
 import styles from "../styles/landing-page.module.css";
 import storeStyles from '../styles/store.module.css'
 import homeImage from "../public/image2.png";
-import { createClient } from "../utils/client";
-import Card from "../components/Card";
+import { createClient } from "../src/utils/client";
+import Card from "../src/components/Card";
 
 export default function Home({ products }) {
     return (

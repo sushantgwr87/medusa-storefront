@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import styles from '../../styles/cart.module.css'
+import styles from '../../../styles/cart.module.css'
 import { formatPrices } from "../../utils/prices";
 import CounterButton from "./CounterButton";
 import DisplayContext from "../../context/display-context";

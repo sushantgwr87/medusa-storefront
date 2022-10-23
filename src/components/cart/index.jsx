@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import DisplayContext from "../../context/display-context";
 import StoreContext from "../../context/store-context";
 import { useRouter } from "next/router";
-import styles from "../../styles/cart.module.css";
+import styles from "../../../styles/cart.module.css";
 import { quantity, sum, formatPrice } from "../../utils/helper-functions";
 import CheckoutCard from "./CheckoutCard";
 

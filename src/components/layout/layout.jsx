@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import NavBar from "./Navbar";
-import CartView from "../cart";
+import Cart from "../cart";
 import DisplayContext from "../../context/display-context";
-import styles from "../../styles/layout.module.css";
+import styles from "../../../styles/layout.module.css";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {
@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className={cartView ? styles.noscroll : null}>
-      <CartView />
+      <Cart />
       <NavBar />
       <main>{children}</main>
       <Footer />

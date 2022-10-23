@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { StoreProvider } from "../context/store-context";
-import { DisplayProvider } from "../context/display-context";
+import { StoreProvider } from "../src/context/store-context";
+import { DisplayProvider } from "../src/context/display-context";
 import "../styles/globals.css";
-import Layout from "../components/layout/layout";
+import Layout from "../src/components/layout/layout";
 
 function MyApp({ Component, pageProps }) {
     return (

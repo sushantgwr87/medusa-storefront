@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoMdCart } from "react-icons/io";
 import { BsChevronLeft } from "react-icons/bs";
-import StoreContext from "../../context/store-context";
-import { resetOptions } from "../../utils/helper-functions";
+import StoreContext from "../../src/context/store-context";
+import { resetOptions } from "../../src/utils/helper-functions";
 import styles from "../../styles/product.module.css";
-import { createClient } from "../../utils/client";
-import { formatPrices } from "../../utils/prices";
-import CounterButton from "../../components/cart/CounterButton";
+import { createClient } from "../../src/utils/client";
+import { formatPrices } from "../../src/utils/prices";
+import CounterButton from "../../src/components/cart/CounterButton";
 
 const Product = ({ product }) => {
     const { addVariantToCart, cart } = useContext(StoreContext);

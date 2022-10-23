@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import styles from '../styles/card.module.css'
+import styles from '../../styles/card.module.css'
 import Image from "next/image";
 import Link from "next/link";
 import { formatPrices } from "../utils/prices";
