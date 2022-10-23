@@ -1,7 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
-  swcMinify: true,
-}
-
-module.exports = nextConfig
+  images: {
+    domains: ["medusa-public-images.s3.eu-west-1.amazonaws.com"],
+  },
+};

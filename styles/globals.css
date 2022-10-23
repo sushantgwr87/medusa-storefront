@@ -1,26 +1,153 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Slab&display=swap');
 
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+    --primaryColor: #f7f7f7;
+    --secondaryColor: #0a0a0a;
+    --greyColor: #7c7c7c;
+    --hoverColor: #1cb7e6;
+    --buttonColor: #bdbdbd;
+    --lightgreyColor: #e6e6e6;
+
+    --fontHead: 'Roboto Slab', serif;
+    --fontBody: 'Raleway', sans-serif;
 }
 
 * {
-  box-sizing: border-box;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+/* styling for scroll-bar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--secondaryColor);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #494949;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--primaryColor);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-family: var(--fontBody);
+}
+
+/* Navbar styling */
+header {
+    position: fixed;
+    background-color: var(--primaryColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+    padding: 0 4vw;
+    box-shadow: 0 0px 10px 0px var(--secondaryColor);
+}
+
+nav a {
+    color: var(--secondaryColor);
+    font-family: var(--fontHead);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: relative;
+    background-color: var(--primaryColor);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* footer styling */
+footer {
+    background-color: var(--secondaryColor);
+    margin-top: auto;
+    color: var(--primaryColor);
+}
+
+/* container containing main content and footer styling */
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* main content styling */
+main {
+    position: relative;
+    padding-top: 80px;
+    /* padding-bottom: 50px; */
+}
+
+/* 404 error page or not found page styling */
+.not-found {
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.not-found h2 {
+    margin-bottom: 20px;
+}
+
+.not-found p {
+    margin-bottom: 50px;
+}
+
+.not-found a {
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--text2);
+    color: var(--text1);
+}
+
+/* svg arrow styling for invitebutton */
+.arrow {
+    display: inline-block;
+    width: 28px;
+    margin-left: 20px;
+}
+
+/* index page stylings */
+.introduction {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
