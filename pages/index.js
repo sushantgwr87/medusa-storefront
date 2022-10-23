@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/landing-page.module.css";
+import storeStyles from '../styles/store.module.css'
 import homeImage from "../public/image2.png";
 import { createClient } from "../utils/client";
 import Card from "../components/Card";
@@ -21,10 +22,10 @@ export default function Home({ products }) {
                         <Image src={homeImage} layout="fill" alt="home" />
                     </div>
                 </section>
-                <section id="storeSection" className={styles.container}>
+                <section id="storeSection" className={storeStyles.container}>
                     <h1>Store</h1>
-                    <div className={styles.products}>
-                        <div className={styles.grid}>
+                    <div className={storeStyles.products}>
+                        <div className={storeStyles.grid}>
                             {products &&
                                 products.map((p) => {
                                     return <Card product={p} />;

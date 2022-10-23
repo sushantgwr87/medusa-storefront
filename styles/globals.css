@@ -54,6 +54,8 @@ a {
 }
 
 button {
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
     cursor: pointer;
     border: none;
     font-family: var(--fontBody);
@@ -150,4 +152,31 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.counter_button {
+    position: relative;
+    display: flex;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: var(--fontHead);
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--greyColor_light);
+}
+
+.counter_button span {
+    padding: 0 calc(10px + 0.2vw);
+    text-align: center;
+    flex: 1;
+}
+
+.counter_button button {
+    font-size: 20px;
+    padding: 0px calc(1px + 0.5vw);
+    flex: 1;
+}
+
+.counter_button button:hover {
+    background-color: var(--greyColor);
 }

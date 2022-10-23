@@ -19,16 +19,14 @@ const Card = ({ product }) => {
                 passHref
             >
                 <a>
-                    <h2>{product.title}</h2>
                     <div className={styles.imgHolder}>
                         <Image
                             src={product.thumbnail}
                             alt="thumbnail"
-                            width={300}
-                            height={300}
+                            layout='fill'
                         />
                     </div>
-                    <p>{product.description}</p>
+                    <h2>{product.title}</h2>
                     <p className={styles.card_price}>
                         {formatPrices(cart, product.variants[0])}
                     </p>

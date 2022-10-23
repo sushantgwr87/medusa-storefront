@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import NavBar from "./Navbar";
-import Blur from "./blur";
 import CartView from "../cart";
 import DisplayContext from "../../context/display-context";
 import styles from "../../styles/layout.module.css";
@@ -12,7 +11,6 @@ const Layout = ({ children }) => {
   return (
     <div className={cartView ? styles.noscroll : null}>
       <CartView />
-      <Blur />
       <NavBar />
       <main>{children}</main>
       <Footer />
