@@ -8,11 +8,17 @@ Sushant Gangwar - @sushantgwr
 
 ### Description
 
-An open source ecommerce website made using next.js and medusa demo server. It has cart system.
+![Logo](./public/storefront_logo.png)
+
+An open source ecommerce website demo made using next.js and medusa demo server. It also has cart system. It was created using context api with help of strater template provided by medusa and other tutorials.
+
+Special Mentions:
+- [Medusa Default Starter Repo](https://github.com/medusajs/nextjs-starter-medusa)
+- [Tutorial for basic setup](https://blog.avneesh.tech/setup-e-commerce-white-medusa)
 
 ### Preview
 
-![Demo](https://s5.gifyu.com/images/Screen_Recording_2022-09-01_at_11.13.49_PM_1-online-video-cutter.com-1-1.gif)
+![Demo](./Animation.gif)
 
 
 ## Set up Project
@@ -20,6 +26,7 @@ An open source ecommerce website made using next.js and medusa demo server. It h
 ### Prerequisites
 Before you start with the tutorial make sure you have
 
+- Medusa CLI `npm install -g @medusajs/medusa-cli`
 - [Node.js](https://nodejs.org/en/) v14 or greater installed on your machine
 - [Medusa server](https://docs.medusajs.com/quickstart/quick-start/) v14 or greater installed on your machine
 
