@@ -10,7 +10,7 @@ Sushant Gangwar - @sushantgwr
 
 ![Logo](./public/storefront_logo.png)
 
-An open source ecommerce website demo made using next.js and medusa demo server. It also has cart system. It was created using context api with help of strater template provided by medusa and other tutorials.
+An open source demo ecommerce website made using next.js and medusa demo server. It also has cart system. It was created using context api with help of strater template provided by medusa and other tutorials.
 
 Special Mentions:
 - [Medusa Default Starter Repo](https://github.com/medusajs/nextjs-starter-medusa)
